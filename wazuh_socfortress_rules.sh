@@ -192,7 +192,7 @@ clone_rules() {
     \cp -r /var/ossec/etc/rules/* /tmp/wazuh_rules_backup/
     
     # Clone and install new rules
-    if ! git clone https://github.com/socfortress/Wazuh-Rules.git /tmp/Wazuh-Rules; then
+    if ! git clone https://github.com/R0GU3-wq/Wazuh-Rules-custom.git /tmp/Wazuh-Rules; then
         logger -e "Failed to clone SOCFortress rules repository"
         return 1
     fi
