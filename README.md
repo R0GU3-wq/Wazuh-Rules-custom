@@ -46,27 +46,8 @@ sudo systemctl restart wazuh-manager
 Alternatively, rerun the script:
 sudo bash /tmp/wazuh_socfortress_rules.sh
 
-
-# 📂 Repository Structure
-Wazuh-Rules-custom/
-├── Windows/
-│   ├── powershell_rules.xml
-│   ├── sysmon_rules.xml
-│   └── ...
-├── Linux/
-│   ├── auth_rules.xml
-│   └── ...
-├── Cloud/
-│   ├── aws_rules.xml
-│   ├── azure_rules.xml
-│   └── ...
-├── wazuh_socfortress_rules.sh
-└── README.md
-
-
 Windows/: Rules for Windows environments (Sysmon, PowerShell, Event Logs).
 Linux/: Rules for Linux systems (auth logs, SSH, sudo, kernel).
-Cloud/: Rules for cloud providers (AWS, Azure, GCP).
 wazuh_socfortress_rules.sh: Script to automatically fetch and install rules.
 README.md: Documentation.
 
